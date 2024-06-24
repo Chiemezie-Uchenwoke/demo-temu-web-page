@@ -1,0 +1,401 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 100%;
+}
+
+.first-menu{
+    background-color: black;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 12px 40px;
+}
+
+.one{
+    display: flex;
+    align-items: center;
+}
+
+.one span{
+    display: block;
+}
+
+.one a{
+    color: #ADFFA2;
+}
+
+.two{
+    display: flex;
+    align-items: center;
+}
+
+.two span{
+    display: block;
+}
+
+.two a{
+    color: #FFF7A7;
+}
+
+.three a{
+    color: #FFF7A7;
+}
+
+.one > div, .two > div{
+    padding: 0px 13px;
+}
+
+.three > a{
+    padding: 0px 5px;
+}
+
+.child a{
+    text-decoration: none;
+}
+
+.child a:hover{
+    text-decoration: underline;
+}
+
+.child div:hover{
+    text-decoration: underline;
+}
+
+.child > a > i{
+    font-size: 20px;
+}
+
+.second-nav-container{
+    width: 100%;
+    background-color: #4412cf;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 40px;
+    font-size: 12px;
+    font-weight: 700;
+    gap: 16px;
+    position: relative;
+}
+
+/* To give the logo a white background */
+.logo > div{
+    background-color: white;
+    border-radius: 50%;
+    width: 95%;
+    height: 50px;
+}
+
+.second-nav-container a{
+    text-decoration: none;
+}
+
+.second-nav-container a,i{
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.second-nav-container span{
+    padding: 0px 8px;
+}
+
+.second-nav-container span:hover{
+    background-color: #331089;
+    border-radius: 30px;
+    padding: 15px 8px;
+}
+
+.turn-i{
+    display: inline-block;
+}
+
+.turn-i button{
+    margin: 1.3rem 0rem;
+    border: none;
+    background-color: #4412cf;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* .turn-i button:hover{
+    background-color: #331089;
+    padding: 15px 0px;
+    border-radius: 30px;
+} */
+
+/* To rotate the i-class icon */
+.turn-i:hover .fa-angle-down{
+    transform: rotate(180deg);
+    font-size: 12px;
+    transition: 0.2s;
+}
+
+.other-items img{
+    border-radius: 50%;
+}
+
+.other-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.other-items .turn-flex{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.other-items i{
+    font-size: 23px;
+}
+
+.search-bar input{
+    width: 320px;
+    height: 42px;
+    border-radius: 40px;
+    border: none;
+}
+
+.search-bar input:focus{
+    outline: none;
+}
+
+.search-bar input[placeholder]{
+    padding: 15px;
+    font-size: 12px;
+}
+
+.search-bar{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar > div{
+    background-color: black;
+    padding: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    cursor: pointer;
+}
+
+.search-bar > div:hover{
+    background-color: rgb(77, 77, 77);
+}
+
+.search-bar > div > i{
+    font-size: 18px;
+}
+
+/* categories dropdown styling */
+.categories-dropdown{
+    background-color: white;
+    color: black;
+    width: 75%;
+    height: 70vh;
+    position: absolute;
+    left: 110px;
+    display: flex;
+    z-index: 2;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.07);
+    padding: 1rem 0rem;
+}
+
+div.categories-child > ul >li{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 10px;
+}
+
+div.categories-child > ul >li:hover{
+    background-color: rgb(246, 246, 246);
+    cursor: pointer;
+}
+
+div.categories-child > ul >li div{
+    background-color: none;
+  
+}
+
+div.categories-child > ul >li div:nth-child(1){
+    width: 220px;
+}
+
+div.categories-child > ul >li div:nth-child(2){
+    width: 0px;
+}
+
+div.categories-child a{
+    text-decoration: none;
+    color: rgb(110, 110, 110);
+    font-size: 13px;
+}
+
+.fa-angle-right{
+    color: rgb(199, 199, 199);
+}
+
+div.first-catg{
+    position: relative;
+    overflow: scroll;
+    scrollbar-color: white white;
+    border-right: rgb(202, 202, 202) 1px solid;
+    scrollbar-width: thin;
+    width: 28%;
+}
+
+div.first-catg:hover{
+    overflow: scroll;
+    scrollbar-color: rgb(197, 197, 197) white;
+}
+
+div.second-catg img{
+    width: 90px;
+    border-radius: 50%;
+    display: block;
+    cursor: pointer;
+}
+
+div.second-catg{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+    overflow: scroll;
+    scrollbar-color: white white;
+    scrollbar-width: thin;
+    padding: 1rem;
+    color: rgb(110, 110, 110);
+}
+
+div.second-catg:hover{
+    overflow: scroll;
+    scrollbar-color: rgb(197, 197, 197) white;
+}
+
+.grid{
+    text-align: center;
+}
+
+.grid > p{
+    padding-top: 0.7rem;
+}
+
+.categories-wrapper{
+    display: none;
+}
+
+.turn-i:hover .categories-wrapper{
+    display: block;
+}
+
+/* Hero section */
+.hero-wrapper{
+    width: 100%;
+    height: 50vh;
+    background-image: linear-gradient(180deg,#331089 ,94%, #ff8f2e);
+}
+
+.herocontainer{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0rem 3rem;
+    color: white;
+    font-size: 4.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.herocontainer img{
+    width: 180px;
+}
+
+.first-hero-flex > div:nth-child(1) > span{
+    display: block;
+    font-size: 1.55rem;
+    text-align: center;
+    color: #ff8f2e;
+    font-weight: 900;
+    margin: -0.8rem 0rem;
+}
+
+.first-hero-flex{
+    display: flex;
+    gap: 0.7rem;
+    position: relative;
+}
+
+.first-hero-flex a{
+    border: none;
+    background-color: #439239;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 30px;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    position: relative;
+    bottom: 1.8rem;
+}
+
+.first-hero-flex > div:nth-child(2){
+    font-size: 7.5rem;
+    position: relative;
+    bottom: 0.6rem;
+}
+
+.first-hero-flex .fa-angle-right{
+    color: white;
+    font-size: 1.1rem;
+}
+
+.second-hero-flex{
+    display: flex;
+    gap: 1rem;
+    position: relative;
+    right: 150px;
+    
+}
+
+.second-hero-flex div.first-image img{
+    border: 10px solid white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(-20deg);
+}
+
+.second-hero-flex div.second-image img{
+    border: 10px solid white;
+    position: relative;
+    top: 0;
+    left: 140px;
+    transform: rotate(20deg);
+}
